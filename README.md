@@ -1,8 +1,8 @@
 # aris-ql
 A simple quantifier logic (QL) interpreter inspired by Peter Smith's _An Introduction to Formal Logic_, 2nd edition - https://www.logicmatters.net/ifl/).
 
-**However** (Smith, _An Introduction to Formal Logic_, Secondo Edition, p. 353)
-- Q-validity is defined in the predictable way: a QL inference between sen- tences is q-valid if it is truth-preserving on all q-valuations.
+**However** (Smith, _An Introduction to Formal Logic_, Second Edition, p. 353)
+- Q-validity is defined in the predictable way: a QL inference between sentences is q-valid if it is truth-preserving on all q-valuations.
 - Our QL proof system is sound: so a proof in the system from given sentences as premisses to a sentence as conclusion shows that the inference from the premisses to the conclusion is q-valid.
 - We can show a QL inference is q-invalid by finding a countervaluation, a q-valuation which makes the premisses true and conclusion false. But note, q-invalidity doesn’t prove plain invalidity; a q-invalid argument will not be valid in virtue of the way that quantifiers and connectives appear, but it can be valid for some other reason.
 - In some simple cases, we can mechanically test a QL inference for q-validity – in particular, when it just involves unary predicates. There is, however, no general method for deciding questions of q-validity.

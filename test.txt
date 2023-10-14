@@ -1,2 +1,5 @@
 print "Hello, Aris!"
+print
 
+argument a := Fn, ∀x(Fx → Gx) ∴ Gn
+validate a

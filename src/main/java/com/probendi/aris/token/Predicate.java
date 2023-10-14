@@ -11,7 +11,7 @@ import java.util.List;
 public class Predicate extends Token {
 
     /**
-     * Creates a new {@code identifier} token with the given symbol.
+     * Creates a new {@code predicate} token with the given symbol.
      *
      * @param value the predicate's symbol
      */
@@ -20,7 +20,7 @@ public class Predicate extends Token {
     }
 
     /**
-     * Creates a new {@code identifier} token with the given symbol.
+     * Creates a new {@code predicate} token with the given symbol.
      *
      * @param c the predicate's symbol
      */

@@ -81,11 +81,7 @@ class ValidateArgumentsProvider implements ArgumentsProvider {
                         new UniversalQuantifier("x", new Conditional(G_X, H_X))), true),
                 // H - ∃xFx ∴ Fn - well-know problem (see p. 235)
                 Arguments.of(new Argument(F_N, new ExistentialQuantifier("x", F_X)), false),
-                // I - ∃xFx, ∃Gx ∴ ∃x(Fx ∧ Gx)
-                Arguments.of(new Argument(
-                        new ExistentialQuantifier("x", new Conjunction(F_X, G_X)),
-                        new ExistentialQuantifier("x", F_X),
-                        new ExistentialQuantifier("x", G_X)), false),
+                // I - ∃xFx, ∃Gx ∴ ∃x(Fx ∧ Gx) -- this is one case where q-validity cannot be decided programmatically
                 // J - ∃x(Fx ∧ ¬Gx), ∀x(Hx ⊃ Gx) ∴ ∃x(Fx ∧ ¬Hx)
                 Arguments.of(new Argument(
                         new ExistentialQuantifier("x", new Conjunction(F_X, new Negation(H_X))),

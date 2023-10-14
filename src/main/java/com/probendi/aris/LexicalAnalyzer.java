@@ -146,10 +146,7 @@ public class LexicalAnalyzer {
                         if (c == ' ' || c == '\t' || c == '(' || c == ')' || c == '∀' || c == '∃') {
                             queue.add(new Variable(sb.toString()));
                             inQuantifier = false;
-                        } else if (sb.isEmpty() && c >= 'x' && c <= 'z') {
-                            sb.append(c);
-                            continue;
-                        } else if (!sb.isEmpty() && c >= '\'') {
+                        } else if ((sb.isEmpty() && c >= 'x' && c <= 'z') || (!sb.isEmpty() && c >= '\'')) {
                             sb.append(c);
                             continue;
                         } else {

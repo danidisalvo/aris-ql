@@ -69,7 +69,7 @@ public class Argument implements WellFormedFormula {
     }
 
     /**
-     * Add the given premise to this argument.
+     * Adds the given premise to this argument.
      *
      * @param premise the premise to be added
      */
